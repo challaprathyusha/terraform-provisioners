@@ -4,7 +4,7 @@
 #self object is used to refer resources block 
 resource "aws_instance" "db" {
     ami = "ami-090252cbe067a9e58"
-    vpc_security_group_ids = [ "sg-0980121946812cd77" ]
+    vpc_security_group_ids = [ "sg-01f82b121228b3b22" ]
     instance_type = "t2.micro"
     tags = {
        Name = "db"
@@ -33,7 +33,7 @@ resource "aws_instance" "db" {
             "sudo dnf install nginx -y",
             "sudo systemctl start nginx"
 
-         ]
+        ]
       
     }
 
