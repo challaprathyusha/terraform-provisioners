@@ -1,5 +1,5 @@
-#creation provisioner to run once the resources are created
-#creation provisioners will run only during resource creation
+#provisioner will not run once the resources are created
+#provisioners will run only during resource creation
 #provisioners are not allowed to directly refer resource block so we use self object to refer them 
 #self object is used to refer resources block 
 resource "aws_instance" "db" {
